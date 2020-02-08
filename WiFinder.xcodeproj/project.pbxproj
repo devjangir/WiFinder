@@ -25,6 +25,7 @@
 		9183462523EAD82B00F82438 /* ChatMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9183462423EAD82B00F82438 /* ChatMessageCell.swift */; };
 		91BB682323E3F36F006F3305 /* MediaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BB682223E3F36F006F3305 /* MediaTableViewCell.swift */; };
 		91BB682623EAA761006F3305 /* WIUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BB682523EAA761006F3305 /* WIUIImageView.swift */; };
+		F5FBB4AD23EE66C6003DE9D0 /* XCSearchViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FBB4AC23EE66C6003DE9D0 /* XCSearchViewTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		91BB682223E3F36F006F3305 /* MediaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTableViewCell.swift; sourceTree = "<group>"; };
 		91BB682523EAA761006F3305 /* WIUIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WIUIImageView.swift; sourceTree = "<group>"; };
 		AD15198FF97C67B54A23754D /* Pods-WiFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WiFinder.debug.xcconfig"; path = "Target Support Files/Pods-WiFinder/Pods-WiFinder.debug.xcconfig"; sourceTree = "<group>"; };
+		F5FBB4AC23EE66C6003DE9D0 /* XCSearchViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = XCSearchViewTest.swift; path = ../ChatBot/XCSearchViewTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +122,9 @@
 		912AF1EA23E056BE00C1F699 /* WiFinderTests */ = {
 			isa = PBXGroup;
 			children = (
+				F5FBB4AB23EE66A0003DE9D0 /* MediaSearch */,
 				912AF1EB23E056BE00C1F699 /* WiFinderTests.swift */,
+				F5FBB4AA23EE6698003DE9D0 /* ChatBot */,
 				912AF1ED23E056BE00C1F699 /* Info.plist */,
 			);
 			path = WiFinderTests;
@@ -255,6 +259,21 @@
 				5DA2FC414178C46A37585649 /* Pods-WiFinder.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		F5FBB4AA23EE6698003DE9D0 /* ChatBot */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ChatBot;
+			sourceTree = "<group>";
+		};
+		F5FBB4AB23EE66A0003DE9D0 /* MediaSearch */ = {
+			isa = PBXGroup;
+			children = (
+				F5FBB4AC23EE66C6003DE9D0 /* XCSearchViewTest.swift */,
+			);
+			path = MediaSearch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -423,6 +442,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				912AF1EC23E056BE00C1F699 /* WiFinderTests.swift in Sources */,
+				F5FBB4AD23EE66C6003DE9D0 /* XCSearchViewTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
