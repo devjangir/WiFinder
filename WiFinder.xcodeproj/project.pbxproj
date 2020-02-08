@@ -1,0 +1,690 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		272513B4C70A532B7A9E3CF0 /* Pods_WiFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53776571DCCDC22B64624E5C /* Pods_WiFinder.framework */; };
+		912AF1D523E056B900C1F699 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912AF1D423E056B900C1F699 /* AppDelegate.swift */; };
+		912AF1D723E056B900C1F699 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912AF1D623E056B900C1F699 /* SceneDelegate.swift */; };
+		912AF1D923E056B900C1F699 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912AF1D823E056B900C1F699 /* ViewController.swift */; };
+		912AF1DC23E056B900C1F699 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 912AF1DA23E056B900C1F699 /* Main.storyboard */; };
+		912AF1DE23E056BE00C1F699 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 912AF1DD23E056BE00C1F699 /* Assets.xcassets */; };
+		912AF1E123E056BE00C1F699 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 912AF1DF23E056BE00C1F699 /* LaunchScreen.storyboard */; };
+		912AF1EC23E056BE00C1F699 /* WiFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912AF1EB23E056BE00C1F699 /* WiFinderTests.swift */; };
+		912AF20223E0651500C1F699 /* DynamicObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912AF20123E0651500C1F699 /* DynamicObserver.swift */; };
+		912AF20423E0689000C1F699 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912AF20323E0689000C1F699 /* SearchViewModel.swift */; };
+		912AF20623E06A8C00C1F699 /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912AF20523E06A8C00C1F699 /* Media.swift */; };
+		912AF20923E0A83300C1F699 /* HttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912AF20823E0A83300C1F699 /* HttpService.swift */; };
+		9183461F23EAD26800F82438 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9183461E23EAD26800F82438 /* ChatViewController.swift */; };
+		9183462123EAD27D00F82438 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9183462023EAD27D00F82438 /* Message.swift */; };
+		9183462323EAD29D00F82438 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9183462223EAD29D00F82438 /* ChatViewModel.swift */; };
+		9183462523EAD82B00F82438 /* ChatMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9183462423EAD82B00F82438 /* ChatMessageCell.swift */; };
+		91BB682323E3F36F006F3305 /* MediaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BB682223E3F36F006F3305 /* MediaTableViewCell.swift */; };
+		91BB682623EAA761006F3305 /* WIUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BB682523EAA761006F3305 /* WIUIImageView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		912AF1E823E056BE00C1F699 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 912AF1C923E056B900C1F699 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 912AF1D023E056B900C1F699;
+			remoteInfo = WiFinder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		53776571DCCDC22B64624E5C /* Pods_WiFinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WiFinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DA2FC414178C46A37585649 /* Pods-WiFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WiFinder.release.xcconfig"; path = "Target Support Files/Pods-WiFinder/Pods-WiFinder.release.xcconfig"; sourceTree = "<group>"; };
+		912AF1D123E056B900C1F699 /* WiFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WiFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		912AF1D423E056B900C1F699 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		912AF1D623E056B900C1F699 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		912AF1D823E056B900C1F699 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		912AF1DB23E056B900C1F699 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		912AF1DD23E056BE00C1F699 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		912AF1E023E056BE00C1F699 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		912AF1E223E056BE00C1F699 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		912AF1E723E056BE00C1F699 /* WiFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WiFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		912AF1EB23E056BE00C1F699 /* WiFinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiFinderTests.swift; sourceTree = "<group>"; };
+		912AF1ED23E056BE00C1F699 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		912AF20123E0651500C1F699 /* DynamicObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicObserver.swift; sourceTree = "<group>"; };
+		912AF20323E0689000C1F699 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		912AF20523E06A8C00C1F699 /* Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
+		912AF20823E0A83300C1F699 /* HttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpService.swift; sourceTree = "<group>"; };
+		9183461E23EAD26800F82438 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		9183462023EAD27D00F82438 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		9183462223EAD29D00F82438 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		9183462423EAD82B00F82438 /* ChatMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageCell.swift; sourceTree = "<group>"; };
+		91BB682223E3F36F006F3305 /* MediaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTableViewCell.swift; sourceTree = "<group>"; };
+		91BB682523EAA761006F3305 /* WIUIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WIUIImageView.swift; sourceTree = "<group>"; };
+		AD15198FF97C67B54A23754D /* Pods-WiFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WiFinder.debug.xcconfig"; path = "Target Support Files/Pods-WiFinder/Pods-WiFinder.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		912AF1CE23E056B900C1F699 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				272513B4C70A532B7A9E3CF0 /* Pods_WiFinder.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		912AF1E423E056BE00C1F699 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		912AF1C823E056B900C1F699 = {
+			isa = PBXGroup;
+			children = (
+				912AF1D323E056B900C1F699 /* WiFinder */,
+				912AF1EA23E056BE00C1F699 /* WiFinderTests */,
+				912AF1D223E056B900C1F699 /* Products */,
+				C68ED5FACD538F77CCD15189 /* Pods */,
+				AA39A8E20923343640E2B6C5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		912AF1D223E056B900C1F699 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				912AF1D123E056B900C1F699 /* WiFinder.app */,
+				912AF1E723E056BE00C1F699 /* WiFinderTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		912AF1D323E056B900C1F699 /* WiFinder */ = {
+			isa = PBXGroup;
+			children = (
+				91BB682423EAA733006F3305 /* Extension */,
+				912AF20723E0A81100C1F699 /* Network */,
+				912AF1FE23E0575200C1F699 /* Main */,
+				912AF1F723E056F500C1F699 /* Chat */,
+				912AF1F623E056EE00C1F699 /* Search */,
+				912AF1DD23E056BE00C1F699 /* Assets.xcassets */,
+				912AF1E223E056BE00C1F699 /* Info.plist */,
+			);
+			path = WiFinder;
+			sourceTree = "<group>";
+		};
+		912AF1EA23E056BE00C1F699 /* WiFinderTests */ = {
+			isa = PBXGroup;
+			children = (
+				912AF1EB23E056BE00C1F699 /* WiFinderTests.swift */,
+				912AF1ED23E056BE00C1F699 /* Info.plist */,
+			);
+			path = WiFinderTests;
+			sourceTree = "<group>";
+		};
+		912AF1F623E056EE00C1F699 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				912AF1F923E0570100C1F699 /* ViewModel */,
+				912AF1F823E056FB00C1F699 /* View */,
+				912AF1FA23E0570800C1F699 /* Model */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		912AF1F723E056F500C1F699 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				912AF1FC23E0573000C1F699 /* ViewModel */,
+				912AF1FD23E0573500C1F699 /* View */,
+				912AF1FB23E0572500C1F699 /* Model */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		912AF1F823E056FB00C1F699 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				912AF1D823E056B900C1F699 /* ViewController.swift */,
+				91BB682223E3F36F006F3305 /* MediaTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		912AF1F923E0570100C1F699 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				912AF20323E0689000C1F699 /* SearchViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		912AF1FA23E0570800C1F699 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				912AF20523E06A8C00C1F699 /* Media.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		912AF1FB23E0572500C1F699 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9183462023EAD27D00F82438 /* Message.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		912AF1FC23E0573000C1F699 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9183462223EAD29D00F82438 /* ChatViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		912AF1FD23E0573500C1F699 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9183461E23EAD26800F82438 /* ChatViewController.swift */,
+				9183462423EAD82B00F82438 /* ChatMessageCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		912AF1FE23E0575200C1F699 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				912AF20023E064DE00C1F699 /* Model */,
+				912AF1FF23E064D200C1F699 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		912AF1FF23E064D200C1F699 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				912AF1D423E056B900C1F699 /* AppDelegate.swift */,
+				912AF1D623E056B900C1F699 /* SceneDelegate.swift */,
+				912AF1DA23E056B900C1F699 /* Main.storyboard */,
+				912AF1DF23E056BE00C1F699 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		912AF20023E064DE00C1F699 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				912AF20123E0651500C1F699 /* DynamicObserver.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		912AF20723E0A81100C1F699 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				912AF20823E0A83300C1F699 /* HttpService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		91BB682423EAA733006F3305 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				91BB682523EAA761006F3305 /* WIUIImageView.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		AA39A8E20923343640E2B6C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53776571DCCDC22B64624E5C /* Pods_WiFinder.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C68ED5FACD538F77CCD15189 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AD15198FF97C67B54A23754D /* Pods-WiFinder.debug.xcconfig */,
+				5DA2FC414178C46A37585649 /* Pods-WiFinder.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		912AF1D023E056B900C1F699 /* WiFinder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 912AF1F023E056BE00C1F699 /* Build configuration list for PBXNativeTarget "WiFinder" */;
+			buildPhases = (
+				3503929777C071FA5AE5F92D /* [CP] Check Pods Manifest.lock */,
+				912AF1CD23E056B900C1F699 /* Sources */,
+				912AF1CE23E056B900C1F699 /* Frameworks */,
+				912AF1CF23E056B900C1F699 /* Resources */,
+				9B1A5D4C05B17EC9CDBA0699 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WiFinder;
+			productName = WiFinder;
+			productReference = 912AF1D123E056B900C1F699 /* WiFinder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		912AF1E623E056BE00C1F699 /* WiFinderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 912AF1F323E056BE00C1F699 /* Build configuration list for PBXNativeTarget "WiFinderTests" */;
+			buildPhases = (
+				912AF1E323E056BE00C1F699 /* Sources */,
+				912AF1E423E056BE00C1F699 /* Frameworks */,
+				912AF1E523E056BE00C1F699 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				912AF1E923E056BE00C1F699 /* PBXTargetDependency */,
+			);
+			name = WiFinderTests;
+			productName = WiFinderTests;
+			productReference = 912AF1E723E056BE00C1F699 /* WiFinderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		912AF1C923E056B900C1F699 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = devjangir;
+				TargetAttributes = {
+					912AF1D023E056B900C1F699 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					912AF1E623E056BE00C1F699 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 912AF1D023E056B900C1F699;
+					};
+				};
+			};
+			buildConfigurationList = 912AF1CC23E056B900C1F699 /* Build configuration list for PBXProject "WiFinder" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 912AF1C823E056B900C1F699;
+			productRefGroup = 912AF1D223E056B900C1F699 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				912AF1D023E056B900C1F699 /* WiFinder */,
+				912AF1E623E056BE00C1F699 /* WiFinderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		912AF1CF23E056B900C1F699 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				912AF1E123E056BE00C1F699 /* LaunchScreen.storyboard in Resources */,
+				912AF1DE23E056BE00C1F699 /* Assets.xcassets in Resources */,
+				912AF1DC23E056B900C1F699 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		912AF1E523E056BE00C1F699 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3503929777C071FA5AE5F92D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WiFinder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B1A5D4C05B17EC9CDBA0699 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WiFinder/Pods-WiFinder-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WiFinder/Pods-WiFinder-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WiFinder/Pods-WiFinder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		912AF1CD23E056B900C1F699 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				912AF1D923E056B900C1F699 /* ViewController.swift in Sources */,
+				912AF20423E0689000C1F699 /* SearchViewModel.swift in Sources */,
+				912AF20623E06A8C00C1F699 /* Media.swift in Sources */,
+				912AF20223E0651500C1F699 /* DynamicObserver.swift in Sources */,
+				91BB682623EAA761006F3305 /* WIUIImageView.swift in Sources */,
+				912AF1D523E056B900C1F699 /* AppDelegate.swift in Sources */,
+				9183462523EAD82B00F82438 /* ChatMessageCell.swift in Sources */,
+				9183462123EAD27D00F82438 /* Message.swift in Sources */,
+				912AF1D723E056B900C1F699 /* SceneDelegate.swift in Sources */,
+				91BB682323E3F36F006F3305 /* MediaTableViewCell.swift in Sources */,
+				9183461F23EAD26800F82438 /* ChatViewController.swift in Sources */,
+				9183462323EAD29D00F82438 /* ChatViewModel.swift in Sources */,
+				912AF20923E0A83300C1F699 /* HttpService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		912AF1E323E056BE00C1F699 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				912AF1EC23E056BE00C1F699 /* WiFinderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		912AF1E923E056BE00C1F699 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 912AF1D023E056B900C1F699 /* WiFinder */;
+			targetProxy = 912AF1E823E056BE00C1F699 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		912AF1DA23E056B900C1F699 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				912AF1DB23E056B900C1F699 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		912AF1DF23E056BE00C1F699 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				912AF1E023E056BE00C1F699 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		912AF1EE23E056BE00C1F699 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		912AF1EF23E056BE00C1F699 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		912AF1F123E056BE00C1F699 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD15198FF97C67B54A23754D /* Pods-WiFinder.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UAPLD4992V;
+				INFOPLIST_FILE = WiFinder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.WiFinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		912AF1F223E056BE00C1F699 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DA2FC414178C46A37585649 /* Pods-WiFinder.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UAPLD4992V;
+				INFOPLIST_FILE = WiFinder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.WiFinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		912AF1F423E056BE00C1F699 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UAPLD4992V;
+				INFOPLIST_FILE = WiFinderTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.WiFinderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WiFinder.app/WiFinder";
+			};
+			name = Debug;
+		};
+		912AF1F523E056BE00C1F699 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UAPLD4992V;
+				INFOPLIST_FILE = WiFinderTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.WiFinderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WiFinder.app/WiFinder";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		912AF1CC23E056B900C1F699 /* Build configuration list for PBXProject "WiFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				912AF1EE23E056BE00C1F699 /* Debug */,
+				912AF1EF23E056BE00C1F699 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		912AF1F023E056BE00C1F699 /* Build configuration list for PBXNativeTarget "WiFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				912AF1F123E056BE00C1F699 /* Debug */,
+				912AF1F223E056BE00C1F699 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		912AF1F323E056BE00C1F699 /* Build configuration list for PBXNativeTarget "WiFinderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				912AF1F423E056BE00C1F699 /* Debug */,
+				912AF1F523E056BE00C1F699 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 912AF1C923E056B900C1F699 /* Project object */;
+}
